@@ -1,0 +1,118 @@
+# ============================================================
+#  UFS Performance Analyzer — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# 🧪 Test folder (local test data, never push)
+# ------------------------------------------------------------
+test/
+test/**
+
+# ------------------------------------------------------------
+# 📁 Trace Input Files
+# ------------------------------------------------------------
+*.txt
+*.log
+*.trace
+*.ftrace
+*.bin
+*.img
+
+# ------------------------------------------------------------
+# 📊 Analysis Output Files
+# ------------------------------------------------------------
+*_io_details.csv
+*_summary.csv
+*_report.html
+*_analysis.html
+*_clean.csv
+*_raw.csv
+*_dispersion.csv
+*_outlier.csv
+comparison_summary*.csv
+
+# ------------------------------------------------------------
+# 🗂️ Common Output / Data Folders
+# ------------------------------------------------------------
+traces/
+logs/
+results/
+output/
+data/
+
+# ------------------------------------------------------------
+# 🐍 Python Artifacts
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.tox/
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# ------------------------------------------------------------
+# 🖥️ OS / Editor
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# 📦 Archive / Large Files
+# ------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+*.gz
+
+# ------------------------------------------------------------
+# 🔐 Security / Secrets
+# ------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.p12
+secrets.json
+credentials.json
+config_local.py
+
+# ------------------------------------------------------------
+# ✅ Exceptions — keep examples in repo
+# ------------------------------------------------------------
+!examples/
+!examples/sample_trace.txt
+!examples/*.csv
+!examples/*.html
+!examples/README.md
